@@ -2,7 +2,7 @@
 {
     static void Main()
     {
-        // Snack 5) - Chiedi all'utente un numero N. Crea N array, ognuno formato da 10 numeri casuali tra 1 e 100, e ogni volta che ne crei uno stampalo a schermo
+        // Snack 6) - Chiedi all'utente un numero N. Crea N array, ognuno formato da 10 numeri casuali tra 1 e 100, e ogni volta che ne crei uno stampalo a schermo
 
         Console.WriteLine("Scrivi un numero");
         int anotherGuyNumber = int.Parse(Console.ReadLine());
@@ -54,7 +54,7 @@
 
 
 
-        // Snack 3) - Calcola la somma e la media dei numeri da 2 a 10
+        // Snack 4) - Calcola la somma e la media dei numeri da 2 a 10
 
         int somma = 0;
 
@@ -93,5 +93,67 @@
 
         Console.WriteLine("La somma dei numeri è: " + sum);
 
+
+        return;
+
+
+        //snack 2)
+
+
+        Console.WriteLine("inserisci un numero");
+        string firstWord = Console.ReadLine();
+
+        Console.WriteLine("inserisci un altro numero");
+        string secondWord = Console.ReadLine();
+
+        if (firstWord.Length > secondWord.Length)
+        {
+
+            Console.WriteLine(firstWord);
+
+        }
+        else if (secondWord.Length > firstWord.Length)
+        {
+
+            Console.WriteLine(secondWord);
+
+        }
+        else
+        {
+            Console.WriteLine("le due parole sono uguali");
+        }
+
+
+
+
+        return;
+
+
+
+        //snack 1)
+
+        Console.WriteLine("inserisci un numero");
+        int firstNumber = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("inserisci un altro numero");
+        int secondNumber = int.Parse(Console.ReadLine());
+
+        if (firstNumber > secondNumber)
+        {
+
+            Console.WriteLine(firstNumber);
+
+        } else if (secondNumber > firstNumber)
+        {
+            
+            Console.WriteLine(secondNumber);
+
+        } else
+        {
+            Console.WriteLine("i due numeri sono uguali");
+        }
+
     }
+
+
 }
