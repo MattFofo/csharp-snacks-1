@@ -2,6 +2,25 @@
 {
     static void Main()
     {
+        // Snack 5) - Chiedi all'utente un numero. Se è pari stampalo, se è dispari stampa il successivo
+
+        Console.WriteLine("Scrivi un numero");
+        int guyNumber = int.Parse(Console.ReadLine());
+
+        if (guyNumber % 2 == 0)
+        {
+            Console.WriteLine(guyNumber);
+        } else
+        {
+            Console.WriteLine(guyNumber + 1);
+
+        }
+
+
+
+
+        return;
+
         // Snack 3) - Calcola la somma e la media dei numeri da 2 a 10
 
         int somma = 0;
