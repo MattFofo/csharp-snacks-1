@@ -2,13 +2,46 @@
 {
     static void Main()
     {
+
+        //Snack12) Scrivere una funzione per verificare se un numero è pari o dispari.
+        //Quindi chiedere un numero all'utente e comunicargli se è pari o dispari.
+
+
+
+
+
+
+
         //Snack11) Dare la possibilità di inserire due parole.
         //Verificare tramite una funzione che le due parole abbiano la stessa
         //lunghezza. Se hanno la stessa lunghezza, stamparle entrambe,
         //altrimenti stampare la più lunga delle due
 
+        string userWord1;
+        string userWord2;
 
-        void CheckWordsLength(string word1, string word2)
+
+        userWord1 = GetUserWord("inserisci una parola");
+        userWord2 = GetUserWord("inserisci un'altra parola");
+
+        //Console.WriteLine("inserisci una parola");
+        //userWord1 = Console.ReadLine();
+
+        //Console.WriteLine("inserisci un'altra parola");
+        //userWord2 = Console.ReadLine();
+
+        CheckWordsLengthAndPrint(userWord1, userWord2);
+
+
+        string GetUserWord(string message)
+        {
+            Console.WriteLine(message);
+            string input = Console.ReadLine();
+            return input;
+        }
+
+
+        void CheckWordsLengthAndPrint(string word1, string word2)
         {
             if (word1.Length > word2.Length)
             {
@@ -24,13 +57,7 @@
             
         }
 
-        Console.WriteLine("inserisci una parola");
-        string userWord1 = Console.ReadLine();
 
-        Console.WriteLine("inserisci un'altra parola");
-        string userWord2 = Console.ReadLine();
-
-        CheckWordsLength(userWord1, userWord2);
 
 
         return;
