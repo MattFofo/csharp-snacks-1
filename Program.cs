@@ -2,6 +2,40 @@
 {
     static void Main()
     {
+        //Snack11) Dare la possibilità di inserire due parole.
+        //Verificare tramite una funzione che le due parole abbiano la stessa
+        //lunghezza. Se hanno la stessa lunghezza, stamparle entrambe,
+        //altrimenti stampare la più lunga delle due
+
+
+        void CheckWordsLength(string word1, string word2)
+        {
+            if (word1.Length > word2.Length)
+            {
+                Console.WriteLine("La parola più lunga è: \x1b[1m{0}\x1b[0m, con \x1b[1m{1}\x1b[0m lettere ", word1, word1.Length);
+            }
+            else if (word1.Length < word2.Length)
+            {
+                Console.WriteLine("La parola più lunga è: \x1b[1m{0}\x1b[0m, con \x1b[1m{1}\x1b[0m lettere ", word2, word2.Length);
+            } else
+            {
+                Console.WriteLine("la parola '\x1b[1m{0}\x1b[0m' e la parola \x1b[1m{1}\x1b[0m sono lunghe uguali, con \x1b[1m{2}\x1b[0m lettere", word1, word2, word1.Length);
+            }
+            
+        }
+
+        Console.WriteLine("inserisci una parola");
+        string userWord1 = Console.ReadLine();
+
+        Console.WriteLine("inserisci un'altra parola");
+        string userWord2 = Console.ReadLine();
+
+        CheckWordsLength(userWord1, userWord2);
+
+
+        return;
+
+
         // Snack 6) - Chiedi all'utente un numero N. Crea N array, ognuno formato da 10 numeri casuali tra 1 e 100, e ogni volta che ne crei uno stampalo a schermo
 
         Console.WriteLine("Scrivi un numero");
